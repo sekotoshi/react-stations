@@ -1,14 +1,20 @@
 // DO NOT DELETE
 
 import './App.css'
+import { useState } from 'react'
+import Header from './Header'
+import Description from './Description'
+import DogListContainer from './DogListContainer'
 
 /**
  * @type {() => JSX.Element}
  */
-export const App = () => {
+export function App() {
   return (
     <div>
-      <h2>Hello, world!</h2>
+      <DogListContainer />
+      <Header />
+      <Description />
     </div>
   )
 }
